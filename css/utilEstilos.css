@@ -1,0 +1,19 @@
+#dadosTabela, #dadosSalas{
+    margin-top: 20px;
+}
+
+#sair{
+    padding: 0px;
+    width: 45px;
+    height: 22px
+}
+
+#logoff{
+    margin-bottom: 0px
+}
+
+#rodape{
+    text-align: center;
+    background-color: #D7D7D7;
+    font-family: "Arial Black";
+}
