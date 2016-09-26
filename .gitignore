@@ -6,3 +6,4 @@ $ cat .gitignore
 *.php-tmp
 *.html-tmp
 *.js-tmp
+sftp-config.json
