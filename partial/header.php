@@ -14,9 +14,9 @@ endif;
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AgendaClin</title>
+        <title>Meu Mercado</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
