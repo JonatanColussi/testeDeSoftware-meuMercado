@@ -27,13 +27,13 @@ endif;
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Produto</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="produto" name="produto" maxlength="150" value="<?= $produtos->nome ?>" <?php if($produtos->nome != '') echo 'readonly' ?>>
+                                    <input type="text" class="form-control" id="produto" name="produto" maxlength="150" value="<?= $produtos->nome ?>" <?php if($produtos->nome != '') echo 'readonly' ?> required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Tipo</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="tipo" name="tipo" maxlength="150" value="<?= $produtos->tipo ?>" <?php if($produtos->tipo != '') echo 'readonly' ?>>
+                                    <input type="text" class="form-control" id="tipo" name="tipo" maxlength="150" value="<?= $produtos->tipo ?>" <?php if($produtos->tipo != '') echo 'readonly' ?> required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -41,14 +41,14 @@ endif;
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon1">R$</span>
-                                        <input type="number" step="0.01" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0">
+                                        <input type="number" step="0.01" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Estoque</label>
                                 <div class="col-md-6">
-                                    <input type="number" class="form-control" id="estoque" name="estoque" maxlength="150" value="<?= $produtos->estoque ?>" min="0">
+                                    <input type="number" class="form-control" id="estoque" name="estoque" maxlength="150" value="<?= $produtos->estoque ?>" min="0" required>
                                 </div>
                             </div>
                             

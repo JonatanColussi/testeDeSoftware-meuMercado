@@ -47,6 +47,7 @@ class Produtos{
 	public function inserirProduto(){
 		try {
 			$query = $this->db->prepare("INSERT INTO produtos (nome, tipo, valor, estoque) VALUES (:nome, :tipo, :valor, :estoque)");
+			if(!strpos($this->valor, '.')) $this->valor .= '.00';
 			$query->BindParam(':nome',$this->nome);
 			$query->BindParam(':tipo',$this->tipo);
 			$query->BindParam(':valor',$this->valor);
@@ -66,6 +67,7 @@ class Produtos{
 	public function editarProduto(){
 		try {
 			$query = $this->db->prepare("UPDATE produtos SET id_produto = :id_produto, nome = :nome, tipo = :tipo, valor = :valor, estoque = :estoque WHERE id_produto = :id_produto");
+			if(!strpos($this->valor, '.')) $this->valor .= '.00';
 			$query->BindParam(':id_produto',$this->id_produto);
 			$query->BindParam(':nome',$this->nome);
 			$query->BindParam(':tipo',$this->tipo);
