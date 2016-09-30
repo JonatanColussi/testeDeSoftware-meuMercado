@@ -27,19 +27,22 @@ endif;
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Produto</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="produto" name="produto" maxlength="150" value="<?= $produtos->nome ?>">
+                                    <input type="text" class="form-control" id="produto" name="produto" maxlength="150" value="<?= $produtos->nome ?>" <?php if($produtos->nome != '') echo 'readonly' ?>>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Tipo</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="tipo" name="tipo" maxlength="150" value="<?= $produtos->tipo ?>">
+                                    <input type="text" class="form-control" id="tipo" name="tipo" maxlength="150" value="<?= $produtos->tipo ?>" <?php if($produtos->tipo != '') echo 'readonly' ?>>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Valor</label>
                                 <div class="col-md-6">
-                                    <input type="number" step="0.1" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon1">R$</span>
+                                        <input type="number" step="0.01" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0">
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">

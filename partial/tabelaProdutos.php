@@ -23,13 +23,13 @@
 				</thead>
 				<tfoot>
 					<tr>
-						<th>Código</th>
-						<th class="fieldPesquisa">Nome</th>
-						<th class="fieldPesquisa">Tipo</th>
-						<th>Valor</th>
-						<th>Estoque</th>
+						<th></th>
+						<th class="fieldPesquisa text-center">Nome</th>
+						<th class="fieldPesquisa text-center">Tipo</th>
+						<th></th>
+						<th></th>
 						<?php if(isset($_SESSION['id_usuario'])): ?>
-							<th>Ações</th>
+							<th></th>
 						<?php endif; ?>
 					</tr>
 				</tfoot>
@@ -41,7 +41,7 @@
 						<td><?=$registro->id_produto;?></td>
 						<td><?=$registro->nome;?></td>
 						<td><?=$registro->tipo;?></td>
-						<td><?=$registro->valor;?></td>
+						<td>R$ <?= str_replace('.', ',', $registro->valor); ?></td>
 						<td><?=$registro->estoque;?></td>
 						<?php if(isset($_SESSION['id_usuario'])): ?>
 							<td class="text-center">

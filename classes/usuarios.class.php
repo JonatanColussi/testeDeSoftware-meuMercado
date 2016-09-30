@@ -32,7 +32,7 @@ class Usuarios{
 				$this->senha = $usuario->senha;
 				return true;
 			}else{
-				throw new Exception('Não existe usuário com o usuario cadastrado!!');
+				throw new Exception('O usuário informado não está cadastrado!!');
 			}
 		}catch(Exception $e) {
 			echo $e->getMessage();
@@ -143,7 +143,7 @@ class Usuarios{
 				$this->senha = $usuario->senha;
 				return true;
 			}else{
-				throw new Exception('Não existe usuário com o usuario cadastrado!!');
+				throw new Exception('O usuário informado não está cadastrado!!');
 			}
 		}catch(Exception $e) {
 			echo $e->getMessage();

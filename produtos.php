@@ -21,7 +21,7 @@ include 'partial/header.php';
 	$(document).ready(function() {
 		$('#tableProdutos tfoot th.fieldPesquisa').each( function () {
 	        var title = $(this).text();
-	        $(this).html( '<input type="text" placeholder="Pesquisar por '+title+'" />' );
+	        $(this).html( '<input class="form-control" type="text" placeholder="Pesquisar por '+title+'" />' );
     	} );
 		var table = $('#tableProdutos').DataTable({
 			"language":{
