@@ -6,7 +6,7 @@ if(isset($_REQUEST['sair'])):
     unset($_SESSION['email_usuario']);
     session_destroy();
     session_unset();
-    header('location: index.php');
+    header('location: ./');
 endif;
 ?>
 <!DOCTYPE html>

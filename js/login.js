@@ -57,5 +57,5 @@ jQuery(document).ready(function($) {
 });
 
 function reload(){    
-    window.location.href = 'index.php';
+    window.location.href = './';
 }
