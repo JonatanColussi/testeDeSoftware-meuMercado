@@ -41,7 +41,7 @@ endif;
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon1">R$</span>
-                                        <input type="number" step="0.01" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0" required>
+                                        <input type="number" step="0.01" class="form-control" id="valor" name="valor" maxlength="150" value="<?= $produtos->valor ?>" min="0.01" required>
                                     </div>
                                 </div>
                             </div>
