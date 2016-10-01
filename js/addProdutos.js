@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
+	var i = 0;
 	$("#formCadastro").on('submit', function(event) {
+		$("input[type=submit]").hide();
 		event.preventDefault();
 		dados = $(this).serialize();
 		jQuery.ajax({
@@ -7,10 +9,11 @@ jQuery(document).ready(function($) {
 			url: "partial/addProdutos.php",
 			data: dados,
 			dataType: "json",
-			cache: false,
+			cache: true,
 			error: function(data){
 				console.log(data);
 				alert('Oops, ocorreu um erro ao cadastrar o produto :(');
+				$("input[type=submit]").show('slow');
 			},
 			success: function(data){
 				$("#errors")
@@ -22,10 +25,12 @@ jQuery(document).ready(function($) {
                         { opacity: 1 },
                         { queue: false, duration: 'slow' }
                         );
-                    if(data[0] == true)
-	                    setTimeout(function(){
-	                        location.href = "produtos.php";
-	                    }, 1650);
+                if(data[0] == true)
+                    setTimeout(function(){
+                        location.href = "produtos.php";
+                    }, 1650);
+               	else
+               		$("input[type=submit]").show('slow');
 			}
 		});
 	});
